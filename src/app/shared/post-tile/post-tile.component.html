@@ -1,0 +1,34 @@
+<!-- Display Posts-->
+<div class="row post" *ngFor="let post of posts.slice().reverse()">
+    <div class = "col-md-1 vote-button-div">
+      <app-vote-button [post] = "post"> </app-vote-button>
+    </div>
+    <!-- Section to Display Post Information-->
+    <div class="col-md-11 post-tile">
+      <div>
+        <img id="avatar-icon" src='https://avatars.dicebear.com/api/micah/{{post.userName}}.svg' alt="user-avatar">
+        <span class="subreddit-text subreddit-text-in-post"><a class="posturl" >r/{{post.subredditName}}</a></span>
+        <span class = "post-info-text"> . Posted by 
+          <a *ngIf="post.userName === null" class="username">Anonymous</a>
+          <a *ngIf="post.userName != null" class="username">u/{{post.userName}}</a>
+        <span> . {{post.duration}}</span>
+      </span>
+    </div>
+      <div class="post-title">
+        <a class="postname" href="{{post.url}}">{{post.postName}}</a>
+      </div>
+      <div>
+        <p class="post-text" [innerHtml] = "post.description"></p>
+      </div>
+      
+      <span>
+        <a class="btnCommments" role="button">
+         <fa-icon [icon]="faComments"></fa-icon>
+          <span class = "comments-button-text"><a (click)="goToPost(post.id)">Comments({{post.commentCount}})</a> </span>
+        </a>
+        <button class="read-post-button" (click)="goToPost(post.id)">
+          <span>Read Post</span>
+        </button>
+      </span>
+    </div>
+  </div>

@@ -1,0 +1,147 @@
+header{
+    border-radius: 1px solid;
+}
+.navbar-div{
+    height: 54px;
+    background-color: rgba(255,255,255,1) !important;
+}
+.reddit-icon-svg{
+    height: 50px;
+    padding: 8px 8px 8px 0;
+    width: 50px;
+}
+
+.reddit-text{        
+    font-weight: 750;
+    height: 50px;
+    width: 50px; 
+    font-size: 20px;   
+}
+.logo{
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.login, .signup{    
+    background-color: transparent;
+    border-color: #0079D3;
+    color: #0079D3;
+    fill: #0079D3;
+    border: 1px solid;
+    border-radius: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    opacity: 1;  
+    margin-right: 15px;
+
+    box-sizing: border-box;
+    font-size: 13px;
+}
+.signup{
+    background-color: #0079D3;
+    border-color: #0079D3;
+    color: aliceblue;
+}
+
+
+.userdetails{    
+    background-color: transparent;
+    border-color: #0079D3;
+    color: #0079D3;
+    fill: #0079D3;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    padding: 3px 0;
+    opacity: 1;
+    border: 0px;
+    margin-right: 22px;
+}
+
+/* .userdetails:hover{
+    border: 1px solid rgb(215, 217, 221);
+} */
+
+.dropdown-item{
+    background-color: #f8f9fa;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dropdown-item:hover{
+    background-color: #0079D3;
+}
+
+.dropdown-menu{
+    background-color: #f8f9fa;
+}
+
+.account-icon{
+    border-radius: 4px;
+    float: left;
+    margin-right: 5px;
+    max-height: 24px;
+    max-width: 24px;
+}
+.user-info-icon{
+    float: right;
+    margin-right: 18px;
+}
+#profile-username:hover{
+    color: grey;
+}
+#profile-username{
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: cursive;
+    margin-left: 4px;
+    margin-right: 2px;
+}
+.profile-div:hover{
+    text-decoration: none;
+}
+
+.profile-div button:hover{
+    border: 1px solid rgb(190, 213, 243);
+}
+#user-avatar-icon{
+        margin-right: 0;
+        height: 15%;
+        width: 22%;
+}
+
+.sign-up:hover{
+    color: white;
+    opacity: 0.8;
+
+}
+.login:hover{
+    opacity: 0.4;
+    color: #0079D3;
+    fill: #0079D3;
+    border: 1px solid;
+
+}
+
+#home-icon{
+    color: black;
+    font-weight: 520;
+}
+

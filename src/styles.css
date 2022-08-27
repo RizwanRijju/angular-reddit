@@ -1,0 +1,113 @@
+/* 
+netstat -ano | findstr :8080
+taskkill /pid 11704 /F
+
+mvn spring-boot:run
+
+ng-serve --source-map=false
+*/
+
+/* You can add global styles to this file, and also import other style files */
+
+html{    
+  padding: 0;
+  height: 100%;  
+}
+body{
+  margin-top: 63px;
+  height: 100%; 
+  background-color: aliceblue;
+}
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+
+.login,
+.sign-up {
+    background-color: #0079D3;
+    border-color: #0079D3;
+    color: aliceblue;
+    fill: #0079D3;
+    border: 1px solid;
+    border-radius: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    opacity: 1;
+    box-sizing: border-box;
+    font-size: 13px;
+  }
+  .comment-button{
+    text-transform: none;
+    padding: 4px 10px !important;
+  }
+
+
+  .spacing{
+    padding-bottom: 15px;
+}
+
+a{
+  text-decoration: none
+}
+
+.post-info-text{
+  font-size: 11px;
+}
+
+.subreddit-text-in-post{
+  font-size: 12px;
+}
+
+.username:hover{
+  text-decoration: underline;
+}
+
+.read-post-button{
+  background-color: #0079D3;
+  border-color: #0079D3;
+  color: aliceblue;
+  fill: #0079D3;
+  border: 1px solid;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 1px 8px;
+  margin-left: 10px;
+  opacity: 1;
+}
+
+.view-all-r-button{
+  background-color: #0079D3;
+  border-color: #0079D3;
+  color: aliceblue;
+  fill: #0079D3;
+  border: 1px solid;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 4px 95px;
+  opacity: 1;
+  text-align: center;
+}
+#avatar-icon{
+    height: 15%;
+    width:3%;
+}
+#avatar-icon-comment{
+  height: 15%;
+  width:4%;
+  margin-bottom:5px;
+}

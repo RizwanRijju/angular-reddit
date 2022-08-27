@@ -1,0 +1,22 @@
+<div class="sidebar-view-subreddit" >
+    <div id="top-comms-heading"><p style="padding-top: 10px;">Top Communities</p><hr /></div>
+    <div>
+    <ol>
+        <li *ngFor="let subreddit of subreddits">
+          <span style="margin-left: 7px; margin-right: 7px;">
+            <img type="image/png" sizes="32x32" rel="icon" src="/assets/images/chevron-up-16.png">
+          </span>
+          <img id="avatar-icon-subreddit-side-bar" src='https://avatars.dicebear.com/api/gridy/{{subreddit.name}}.svg' alt="user-avatar">
+          <a style="margin-left: 6px;" routerLink="/view-subreddit-posts/{{subreddit.id}}">r/{{subreddit.name}}</a>
+          <button id="view-subreddit-button" (click)="goToPosts(subreddit.id!)">View</button>
+          <hr style="margin-left: -40px;"/>
+        
+        </li>
+      </ol>
+    </div>
+    <div class = "view-all-div" *ngIf="displayViewAll">
+        <button class="view-all-r-button" (click) = "goToSubredditList()">
+            <a class = "view-all-subs-text">View All</a>
+        </button>
+    </div>
+</div>

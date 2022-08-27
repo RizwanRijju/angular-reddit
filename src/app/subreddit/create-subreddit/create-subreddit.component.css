@@ -1,0 +1,97 @@
+.create-subreddit-container {
+    margin-top: 10px;
+    --post-line-color: #ccc;
+    border: 0.5px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #878A8C;
+    position: relative;
+    border-radius: 8px;
+    padding: 10px;
+    height: 290px;
+  }
+  
+  .create-subreddit-heading {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #1c1c1c;
+   
+  }
+  
+  .subreddit-description{
+    width: 100%;
+    margin-top: 20px; 
+    height: 100px;
+    background-color: rgba(197, 197, 197, 0.12);
+  }
+  .btnCreateSubreddit {
+    background-color: #0079D3;
+    border-color: #0079D3;
+    color: aliceblue;
+    fill: #0079D3;
+    border: 1px solid;
+    border-radius: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    padding: 3px 16px;
+    opacity: 1;
+    width: 100px;
+    height: 34px;
+    margin-left:8px;
+  }
+  
+  .btnDiscard {
+    fill: #0079D3;
+    border: 1px solid;
+    border-radius: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    padding: 3px 16px;
+    opacity: 1;
+    width: 100px;
+    height: 34px;
+    margin-top: 5px;
+    color: #0079D3;
+    background-color: transparent;
+  }
+  
+  .guidelines {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #1c1c1c;
+  }
+  
+  .sidebar {
+    width: 312px;
+    height: 285px;
+    --post-line-color: #ccc;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #878A8C;
+    position: relative;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  textarea{
+    border-radius: 6px;
+  }

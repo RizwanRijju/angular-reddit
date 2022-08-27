@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row post">
+          <div class="col-md-1 vote-button-div">
+            <app-vote-button [post]="post"></app-vote-button>
+          </div>
+          <div class="col-md-11">
+            <div>
+              <img id="avatar-icon" src='https://avatars.dicebear.com/api/micah/{{post.userName}}.svg' alt="user-avatar">
+              <span class="subreddit-text subreddit-text-in-post"><a class="post-url" routerLink="">r/{{post.subredditName}}</a></span>
+              <span class = "post-info-text"> . Posted
+                 by 
+                <a *ngIf="post.userName === null" class="username">Anonymous</a>
+                <a *ngIf="post.userName != null" class="username">u/{{post.userName}}</a>
+                <span> . {{post.duration}} </span>
+              </span>
+            </div>
+            <!-- <hr id="view-post-hr"/> -->
+            
+            <div id="view-post-description">
+              <a class="post-title" href="{{post.url}}">{{post.postName}}</a>
+              <p class="post-text" [innerHtml]="post.description"></p>
+            </div>
+            <div class="post-comment">
+              <form [formGroup]="commentForm" (ngSubmit)="postComment()">
+                <div class="form-group comment-text-box">
+                  <textarea class="form-control" [formControlName]="'text'" placeholder="I think..."></textarea>
+                </div>
+                <button type="submit" class="login comment-button">Comment</button>
+              </form>
+            </div>
+            <div *ngFor="let comment of comments.slice().reverse()">
+              <div class="comment">
+                <div class="username">
+                  <div class="comment-header-container">
+                    <img id="avatar-icon-comment" src='https://avatars.dicebear.com/api/micah/{{comment.userName}}.svg' alt="user-avatar">
+                    <a id="comment-username">r/{{comment.userName}}</a>
+                    <span id="comment-duration" > . Commented {{comment.duration}}</span>
+                  </div>
+                  
+                </div>
+                <div>
+                  <div class="vl"></div>
+                  <div id="comment-text">
+                    <p style="font-size: 13px; font-weight: 400;">{{comment.text}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <app-side-bar></app-side-bar>
+        <app-subreddit-side-bar></app-subreddit-side-bar>
+      </div>
+    </div>
+  </div>

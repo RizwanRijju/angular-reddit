@@ -1,0 +1,48 @@
+<div class="container">
+ 
+<div class="row">
+
+  <div class="col-md-9">
+    
+    <div *ngIf="!hasPostedEver" style="padding-top: 30px;">
+      <h5>Hey, <span style="font-family: cursive;">{{name}}</span>!</h5>
+      <h6 style="margin-left: 15px;">Looks like you haven't posted anything yet. Go ahead and make your first post!</h6>
+    </div>
+    <div *ngIf="hasPostedEver">
+      <div>
+        <h6>Your Posts:</h6>
+      </div>
+      <div>
+        <app-post-tile [posts]="posts"></app-post-tile>
+      </div>
+    </div>
+
+    <div *ngIf="hasCommentedAtleastOnce">
+      <div>
+        <h6>Your Comments({{commentLength}}):</h6>
+      </div>
+      <div *ngFor="let comment of comments.slice().reverse()">
+        <div class="comment">
+          <div class="username">
+            <img id="userprofile-avatar-icon-comment" src='https://avatars.dicebear.com/api/micah/{{comment.postId}}.svg' alt="user-avatar" /> 
+            <p id="profile-comment-duration">Commented {{comment.duration}}</p>
+            <a routerLink="/view-post/{{comment.postId}}" id="comment-username" >Go to Post</a>
+            
+          </div>
+          <div>
+            <div class="vl"></div>
+            <div id="comment-text">
+              <p style="font-size: 13px; font-weight: 400;">{{comment.text}}</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    </div>
+  <div class="col-md-3 float-right" style = "margin-top: 23px;">
+    <app-side-bar></app-side-bar>
+    <app-subreddit-side-bar></app-subreddit-side-bar>
+  </div>
+</div>
+
+</div>

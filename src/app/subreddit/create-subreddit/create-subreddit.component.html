@@ -1,0 +1,26 @@
+<div class="container pt-1">
+    <div class="row pt-3">
+      <div class=" col-md-9 create-subreddit-container">
+        <form class="post-form" [formGroup]="createSubredditForm" (ngSubmit)="createSubreddit()">
+          <div class="form-group">
+            <div class="create-subreddit-heading">Create Subreddit</div>
+            <hr />
+            <input type="text" [formControlName]="'title'" class="form-control" style="margin-top: 5px"
+              placeholder="Title">
+            <textarea class = "subreddit-description" type="text" [formControlName]="'description'" placeholder="Description"></textarea>
+            <div>
+              <div style="margin-top: 5px" class="float-right">
+                <button (click)="discard()" class="btnDiscard">Discard</button>
+                <button class="btnCreateSubreddit" type = "submit">Create</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <app-side-bar></app-side-bar>
+        <app-subreddit-side-bar></app-subreddit-side-bar>
+      </div>
+      
+    </div>
+</div>
