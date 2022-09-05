@@ -9,7 +9,7 @@ import { SubredditModel } from './subreddit-response';
 })
 export class SubredditService {
 
-  baseUrl = environment.baseUrl;
+  baseUrl = environment.baseUrl;  
   
   constructor(private http: HttpClient) { }
 

@@ -6,7 +6,7 @@
     <!-- Section to Display Post Information-->
     <div class="col-md-11 post-tile">
       <div>
-        <img id="avatar-icon" src='https://avatars.dicebear.com/api/micah/{{post.userName}}.svg' alt="user-avatar">
+        <img id="avatar-icon" src='https://avatars.dicebear.com/api/micah/{{post.userName}}.svg' alt="icon">
         <span class="subreddit-text subreddit-text-in-post"><a class="posturl" >r/{{post.subredditName}}</a></span>
         <span class = "post-info-text"> . Posted by 
           <a *ngIf="post.userName === null" class="username">Anonymous</a>

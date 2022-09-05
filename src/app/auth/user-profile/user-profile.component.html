@@ -24,7 +24,7 @@
       <div *ngFor="let comment of comments.slice().reverse()">
         <div class="comment">
           <div class="username">
-            <img id="userprofile-avatar-icon-comment" src='https://avatars.dicebear.com/api/micah/{{comment.postId}}.svg' alt="user-avatar" /> 
+            <img id="userprofile-avatar-icon-comment" src='https://avatars.dicebear.com/api/micah/{{comment.postId}}.svg' alt="icon" /> 
             <p id="profile-comment-duration">Commented {{comment.duration}}</p>
             <a routerLink="/view-post/{{comment.postId}}" id="comment-username" >Go to Post</a>
             
